@@ -96,6 +96,7 @@ class Economy {
 		}
 		return $ammount;
 	}
+	
 	public function isLoaded(){
 		return $this->economy instanceof Plugin;
 	}

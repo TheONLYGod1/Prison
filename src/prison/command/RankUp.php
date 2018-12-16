@@ -1,15 +1,14 @@
 <?php
 namespace prison\command;
 
-use pocketmine\command\Command;
-use pocketmine\command\PluginIdentifiableCommand;
-use pocketmine\command\CommandSender;
-use pocketmine\utils\TextFormat as Text;
-use pocketmine\Player;
-
-use prison\Prison;
-
 use _64FF00\PurePerms\PPGroup;
+use pocketmine\Player;
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
+use pocketmine\command\PluginIdentifiableCommand;
+use pocketmine\plugin\Plugin;
+use pocketmine\utils\TextFormat as Text;
+use prison\Prison;
 
 class RankUp extends Command implements PluginIdentifiableCommand {
 	
@@ -34,7 +33,7 @@ class RankUp extends Command implements PluginIdentifiableCommand {
 
 	}
 
-	public function getPlugin(){
+	public function getPlugin() : Plugin {
 		return $this->plugin;
 	}
 
