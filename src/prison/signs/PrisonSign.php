@@ -106,4 +106,3 @@ class PrisonSign extends Position {
   
 }
 
-?>
